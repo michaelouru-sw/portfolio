@@ -10,13 +10,15 @@
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="brand">
       <span class="name">Michael Ouru, PMP</span>
       <span class="tagline">Trackable Learning Journeys</span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#tools">Tools</a>
       <a href="#projects">Projects</a>
@@ -41,18 +43,51 @@
       </div>
     </div>
     <div class="hero-stats">
-      <div class="stat-card"><div class="icon"><i class="fa-solid fa-users"></i></div><div class="num">500K+</div><div class="label">Learners Reached</div></div>
-      <div class="stat-card"><div class="icon"><i class="fa-solid fa-book-open"></i></div><div class="num">600+</div><div class="label">Courses Developed</div></div>
-      <div class="stat-card"><div class="icon"><i class="fa-solid fa-user-group"></i></div><div class="num">10K+</div><div class="label">Active LMS Users</div></div>
-      <div class="stat-card"><div class="icon"><i class="fa-solid fa-server"></i></div><div class="num">99.9%</div><div class="label">Platform Uptime</div></div>
+      <div class="stat-card">
+        <div class="icon"><i class="fa-solid fa-users"></i></div>
+        <div class="num" data-count="500" data-suffix="K+">500K+</div>
+        <div class="label">Learners Reached</div>
+      </div>
+      <div class="stat-card">
+        <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="num" data-count="600" data-suffix="+">600+</div>
+        <div class="label">Courses Developed</div>
+      </div>
+      <div class="stat-card">
+        <div class="icon"><i class="fa-solid fa-user-group"></i></div>
+        <div class="num" data-count="10" data-suffix="K+">10K+</div>
+        <div class="label">Active LMS Users</div>
+      </div>
+      <div class="stat-card">
+        <div class="icon"><i class="fa-solid fa-server"></i></div>
+        <div class="num" data-count="99.9" data-suffix="%">99.9%</div>
+        <div class="label">Platform Uptime</div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Trusted by strip -->
+<div class="trusted-strip">
+  <div class="container">
+    <span class="trusted-label">Trusted by</span>
+    <div class="trusted-names">
+      <span class="trusted-name">Oxfam Novib</span>
+      <span class="trusted-name">CTBTO</span>
+      <span class="trusted-name">UNICEF</span>
+      <span class="trusted-name">ILO</span>
+      <span class="trusted-name">KCA University</span>
+      <span class="trusted-name">NITA Kenya</span>
+      <span class="trusted-name">TVETA Kenya</span>
+      <span class="trusted-name">PCPM</span>
+    </div>
+  </div>
+</div>
+
 <section id="about">
   <div class="container about-grid">
-    <div class="about-photo"><img src="assets/michael-ouru.jpg" alt="Michael Ouru, PMP" /></div>
-    <div>
+    <div class="about-photo fade-in-up"><img src="assets/michael-ouru.jpg" alt="Michael Ouru, PMP" /></div>
+    <div class="fade-in-up" style="transition-delay:0.1s">
       <div class="section-head" style="text-align:left; margin:0 0 16px;">
         <span class="eyebrow">About</span>
         <h2>Instructional Designer &amp; LMS Architect</h2>
@@ -75,48 +110,48 @@
 
 <section id="tools">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head fade-in-up">
       <span class="eyebrow">Proof of Technical Competency</span>
       <h2>Tools &amp; Technologies</h2>
       <p>Authoring tools, LMS platforms, and delivery standards I use to design and ship trackable learning experiences.</p>
     </div>
     <div class="tools-grid">
-      <div class="tool-card">
+      <div class="tool-card fade-in-up">
         <div class="icon"><i class="fa-solid fa-diagram-project"></i></div>
         <div class="tname">Articulate Storyline</div>
         <div class="tdesc">Scenario-based, branching eLearning modules</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card fade-in-up" style="transition-delay:0.05s">
         <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
         <div class="tname">Articulate Rise</div>
         <div class="tdesc">Responsive, mobile-first course authoring</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card fade-in-up" style="transition-delay:0.1s">
         <div class="icon"><i class="fa-solid fa-bolt"></i></div>
         <div class="tname">Elucidat</div>
         <div class="tdesc">Rapid, collaborative interactive eLearning</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card fade-in-up" style="transition-delay:0.15s">
         <div class="icon"><i class="fa-solid fa-clapperboard"></i></div>
         <div class="tname">Vyond</div>
         <div class="tdesc">Animated explainer &amp; scenario videos</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card fade-in-up" style="transition-delay:0.2s">
         <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
         <div class="tname">Moodle LMS</div>
         <div class="tdesc">LMS architecture, administration &amp; deployment</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card fade-in-up" style="transition-delay:0.25s">
         <div class="icon"><i class="fa-solid fa-link"></i></div>
         <div class="tname">SCORM / xAPI</div>
         <div class="tdesc">Standards-compliant, trackable course packaging</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card fade-in-up" style="transition-delay:0.3s">
         <div class="icon"><i class="fa-solid fa-cloud"></i></div>
         <div class="tname">AWS / Azure</div>
         <div class="tdesc">Cloud LMS infrastructure &amp; deployment</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card fade-in-up" style="transition-delay:0.35s">
         <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
         <div class="tname">PMP / Agile</div>
         <div class="tdesc">Project management &amp; agile delivery</div>
@@ -127,7 +162,7 @@
 
 <section id="projects">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head fade-in-up">
       <span class="eyebrow">Selected Work</span>
       <h2>Case Studies</h2>
       <p>Nine engagements spanning NGOs, governments, UN agencies, and universities — each built around measurable learning outcomes.</p>
@@ -144,7 +179,7 @@
 
     <div class="project-grid">
 
-      <article class="project-card" data-tools="elucidat">
+      <article class="project-card fade-in-up" data-tools="elucidat">
         <div class="year">2024 · NGO</div>
         <div class="card-thumb"><i class="fa-solid fa-bullhorn"></i></div>
         <h3>Digital Influencing eLearning Module</h3>
@@ -155,7 +190,7 @@
         <a class="card-link" href="projects/oxfam-novib.html">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
       </article>
 
-      <article class="project-card" data-tools="moodle">
+      <article class="project-card fade-in-up" data-tools="moodle" style="transition-delay:0.05s">
         <div class="year">2023 · Government / UN</div>
         <div class="card-thumb"><i class="fa-solid fa-school"></i></div>
         <h3>National E-Learning Platform</h3>
@@ -166,7 +201,7 @@
         <a class="card-link" href="projects/eswatini-unicef.html">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
       </article>
 
-      <article class="project-card" data-tools="moodle">
+      <article class="project-card fade-in-up" data-tools="moodle" style="transition-delay:0.1s">
         <div class="year">2023 · International Org</div>
         <div class="card-thumb"><i class="fa-solid fa-shield-halved"></i></div>
         <h3>Enterprise LMS Deployment</h3>
@@ -177,7 +212,7 @@
         <a class="card-link" href="projects/ctbto.html">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
       </article>
 
-      <article class="project-card" data-tools="moodle rise">
+      <article class="project-card fade-in-up" data-tools="moodle rise" style="transition-delay:0.05s">
         <div class="year">2026 · Higher Education</div>
         <div class="card-thumb"><i class="fa-solid fa-graduation-cap"></i></div>
         <h3>LMS &amp; Media Services Transformation</h3>
@@ -188,7 +223,7 @@
         <a class="card-link" href="projects/kca-university.html">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
       </article>
 
-      <article class="project-card" data-tools="rise elucidat storyline vyond">
+      <article class="project-card fade-in-up" data-tools="rise elucidat storyline vyond" style="transition-delay:0.1s">
         <div class="year">2023–2026 · Multi-sector</div>
         <div class="card-thumb"><i class="fa-solid fa-globe"></i></div>
         <h3>Custom eLearning Solutions</h3>
@@ -199,7 +234,7 @@
         <a class="card-link" href="projects/custom-elearning.html">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
       </article>
 
-      <article class="project-card" data-tools="storyline">
+      <article class="project-card fade-in-up" data-tools="storyline" style="transition-delay:0.15s">
         <div class="year">2023 · Government</div>
         <div class="card-thumb"><i class="fa-solid fa-industry"></i></div>
         <h3>Digital Content Development</h3>
@@ -210,7 +245,7 @@
         <a class="card-link" href="projects/nita.html">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
       </article>
 
-      <article class="project-card" data-tools="moodle">
+      <article class="project-card fade-in-up" data-tools="moodle">
         <div class="year">2024 · Government</div>
         <div class="card-thumb"><i class="fa-solid fa-clipboard-list"></i></div>
         <h3>TVETA eLearning Standards Development</h3>
@@ -221,7 +256,7 @@
         <a class="card-link" href="projects/tveta.html">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
       </article>
 
-      <article class="project-card" data-tools="moodle">
+      <article class="project-card fade-in-up" data-tools="moodle" style="transition-delay:0.05s">
         <div class="year">2023 · NGO</div>
         <div class="card-thumb"><i class="fa-solid fa-fire-flame-curved"></i></div>
         <h3>PCPM eLearning Support</h3>
@@ -232,7 +267,7 @@
         <a class="card-link" href="projects/pcpm.html">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
       </article>
 
-      <article class="project-card" data-tools="storyline elucidat">
+      <article class="project-card fade-in-up" data-tools="storyline elucidat" style="transition-delay:0.1s">
         <div class="year">2023 · UN / Government</div>
         <div class="card-thumb"><i class="fa-solid fa-helmet-safety"></i></div>
         <h3>ILO–KSTVET Partnership (PROSPECTS Project)</h3>
@@ -247,11 +282,24 @@
   </div>
 </section>
 
-<footer class="site-footer" id="contact">
+<!-- CTA Section -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <h2>Ready to build learning that <span>actually works</span>?</h2>
+    <p>Available for instructional design, LMS architecture, and eLearning consulting engagements. Let's talk about your next project.</p>
+    <div class="cta-row">
+      <a href="mailto:michaelouru2@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
+      <a href="https://wa.me/254715440817" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.linkedin.com/in/michael-ouru-pmp%C2%AE-215671152/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
   <div class="container">
     <div>
       <div class="brand"><span class="name">Michael Ouru, PMP</span><span class="tagline">Trackable Learning Journeys</span></div>
-      <p style="max-width:380px; margin-top:12px;">Available for instructional design, LMS architecture, and eLearning consulting engagements.</p>
+      <p style="max-width:320px; margin-top:12px; font-size:0.88rem; line-height:1.6;">Instructional designer and LMS architect for NGOs, governments, and international organizations.</p>
     </div>
     <div>
       <p><i class="fa-solid fa-globe"></i> <a href="https://instracta.com" target="_blank" rel="noopener">instracta.com</a></p>
@@ -267,6 +315,8 @@
   </div>
   <div class="footer-bottom">&copy; 2026 Michael Ouru. All rights reserved.</div>
 </footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script src="script.js"></script>
 </body>
