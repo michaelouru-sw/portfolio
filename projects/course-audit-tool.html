@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Course Audit Tool — Uniqualified | Michael Ouru, PMP</title>
+<title>Course Audit Tool - Uniqualified | Michael Ouru, PMP</title>
 <link rel="stylesheet" href="../styles.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -33,7 +33,7 @@
   <div class="container">
     <a class="breadcrumb" href="../index.html#projects"><i class="fa-solid fa-arrow-left"></i> All Projects</a>
     <div class="case-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-    <h1>Course Audit Tool — Uniqualified</h1>
+    <h1>Course Audit Tool - Uniqualified</h1>
     <p class="client-line">KCA University / Open-Source · 2026 · PHP / Moodle / MySQL</p>
     <div class="case-links">
       <a class="btn btn-primary" href="https://github.com/michaelouru-sw/uniqualified" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Repository</a>
@@ -47,35 +47,35 @@
 
       <div class="case-block full">
         <h2><i class="fa-solid fa-triangle-exclamation"></i> The Problem</h2>
-        <p>KCA University's Quality Assurance office was manually cross-referencing timetable spreadsheets against Moodle courses every term — checking whether each course had the right activities, the right lecturer, and evidence the term had started. The process was slow, error-prone, and entirely manual. Worse, there was no mechanism to see a problem developing before it became serious: issues only surfaced after a student or accreditation body complained.</p>
+        <p>KCA University's Quality Assurance office was manually cross-referencing timetable spreadsheets against Moodle courses every term - checking whether each course had the right activities, the right lecturer, and evidence the term had started. The process was slow, error-prone, and entirely manual. Worse, there was no mechanism to see a problem developing before it became serious: issues only surfaced after a student or accreditation body complained.</p>
       </div>
 
       <div class="case-block">
         <h2><i class="fa-solid fa-users"></i> Target Audience</h2>
-        <p>QA officers and programme coordinators running periodic course audits across a multi-faculty, multi-campus Moodle deployment — plus university leadership needing trend-level visibility into course quality over time.</p>
+        <p>QA officers and programme coordinators running periodic course audits across a multi-faculty, multi-campus Moodle deployment - plus university leadership needing trend-level visibility into course quality over time.</p>
       </div>
 
       <div class="case-block">
         <h2><i class="fa-solid fa-user-tie"></i> My Role</h2>
-        <p>Sole developer — end-to-end: architecture, backend, database design, algorithm design (including the Bayesian adaptive weighting and Mann-Kendall trend engine), Moodle API integration, testing, and documentation — verified against a live Moodle 5.0.8 instance with real data.</p>
+        <p>Sole developer - end-to-end: architecture, backend, database design, algorithm design (including the Bayesian adaptive weighting and Mann-Kendall trend engine), Moodle API integration, testing, and documentation - verified against a live Moodle 5.0.8 instance with real data.</p>
       </div>
 
       <div class="case-block full">
         <h2><i class="fa-solid fa-diagram-project"></i> Design Process &amp; Approach</h2>
-        <p>I started from the real QA workflow — not an abstraction of it — and identified three failure modes the spreadsheet approach couldn't fix: it couldn't scale, it couldn't catch trends, and it couldn't learn which quality signals actually mattered for this institution. The design process moved from that problem statement outward: data model first, then reconciliation logic, then the risk engine, then the dashboard, then admin configurability. Every layer was verified on live data before the next was built.</p>
+        <p>I started from the real QA workflow - not an abstraction of it - and identified three failure modes the spreadsheet approach couldn't fix: it couldn't scale, it couldn't catch trends, and it couldn't learn which quality signals actually mattered for this institution. The design process moved from that problem statement outward: data model first, then reconciliation logic, then the risk engine, then the dashboard, then admin configurability. Every layer was verified on live data before the next was built.</p>
       </div>
 
       <div class="case-block full">
         <h2><i class="fa-solid fa-lightbulb"></i> The Solution</h2>
         <p>A production-grade Moodle plugin (<code>local_courseaudit</code>) with five integrated capabilities:</p>
         <ul>
-          <li><strong>Multi-format timetable reconciliation</strong> — parses real institutional spreadsheets across multiple inconsistent faculty formats and matches each row against live Moodle course data, including disambiguation logic for unit codes that map to several offerings.</li>
-          <li><strong>Configurable compliance-audit dashboard</strong> — filterable, paginated view of every course's compliance against a quality template, with bulk review actions, category-scoped access for programme coordinators, and one-click Excel export including multi-tab mismatch and anomaly reports.</li>
-          <li><strong>Real Moodle Analytics (ML) integration</strong> — surfaces Moodle's native course-risk and student-dropout predictions directly on the dashboard; includes a dedicated ML Insights page and the ability to message at-risk students or bulk-email at-risk course lecturers via Moodle's real messaging and notification APIs.</li>
-          <li><strong>Adaptive risk-scoring engine</strong> — a composite 0–100 score fusing five signal types. Two signals use <strong>Beta-Bernoulli conjugate updating</strong> (a Bayesian online-learning technique) so each signal's weight is continuously re-estimated from whether its past flags actually held up. A signal that reliably predicts lasting problems earns more weight; one that flags things that self-resolve earns less — automatically, from this institution's own data.</li>
-          <li><strong>Statistical early-warning trend detection</strong> — records a timestamped quality snapshot every run (optionally via a daily background task) and applies a <strong>Mann-Kendall nonparametric trend test</strong> to flag a course that's meaningfully declining before any single rule fires. Verified on a real course showing 100% → 71% → 14% → 0% compliance across four snapshots.</li>
+          <li><strong>Multi-format timetable reconciliation</strong> - parses real institutional spreadsheets across multiple inconsistent faculty formats and matches each row against live Moodle course data, including disambiguation logic for unit codes that map to several offerings.</li>
+          <li><strong>Configurable compliance-audit dashboard</strong> - filterable, paginated view of every course's compliance against a quality template, with bulk review actions, category-scoped access for programme coordinators, and one-click Excel export including multi-tab mismatch and anomaly reports.</li>
+          <li><strong>Real Moodle Analytics (ML) integration</strong> - surfaces Moodle's native course-risk and student-dropout predictions directly on the dashboard; includes a dedicated ML Insights page and the ability to message at-risk students or bulk-email at-risk course lecturers via Moodle's real messaging and notification APIs.</li>
+          <li><strong>Adaptive risk-scoring engine</strong> - a composite 0–100 score fusing five signal types. Two signals use <strong>Beta-Bernoulli conjugate updating</strong> (a Bayesian online-learning technique) so each signal's weight is continuously re-estimated from whether its past flags actually held up. A signal that reliably predicts lasting problems earns more weight; one that flags things that self-resolve earns less - automatically, from this institution's own data.</li>
+          <li><strong>Statistical early-warning trend detection</strong> - records a timestamped quality snapshot every run (optionally via a daily background task) and applies a <strong>Mann-Kendall nonparametric trend test</strong> to flag a course that's meaningfully declining before any single rule fires. Verified on a real course showing 100% → 71% → 14% → 0% compliance across four snapshots.</li>
         </ul>
-        <p style="margin-top:12px;">All 23 originally hardcoded parameters — quiz naming conventions, brand colours, timetable column headers, thresholds — are now admin settings, so a different institution can adopt the plugin without touching code.</p>
+        <p style="margin-top:12px;">All 23 originally hardcoded parameters - quiz naming conventions, brand colours, timetable column headers, thresholds - are now admin settings, so a different institution can adopt the plugin without touching code.</p>
       </div>
 
       <div class="case-block">
@@ -92,7 +92,7 @@
         <h2><i class="fa-solid fa-certificate"></i> Technical Competencies Demonstrated</h2>
         <ul>
           <li>Moodle 5.0 plugin architecture (PHP, hooks, capabilities, events)</li>
-          <li>Bayesian online learning — Beta-Bernoulli conjugate updating</li>
+          <li>Bayesian online learning - Beta-Bernoulli conjugate updating</li>
           <li>Mann-Kendall nonparametric trend test (implemented from first principles)</li>
           <li>Moodle Analytics API integration (ML predictions surfaced in UI)</li>
           <li>Multi-format spreadsheet parsing and timetable reconciliation</li>

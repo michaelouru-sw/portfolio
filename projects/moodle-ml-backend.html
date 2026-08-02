@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Moodle Machine Learning Backend — KCA University | Michael Ouru, PMP</title>
+<title>Moodle Machine Learning Backend - KCA University | Michael Ouru, PMP</title>
 <link rel="stylesheet" href="../styles.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -47,33 +47,33 @@
 
       <div class="case-block full">
         <h2><i class="fa-solid fa-triangle-exclamation"></i> The Problem</h2>
-        <p>Moodle's native Analytics API can predict student dropout and course risk — but only when a Python ML backend is running reliably behind it. In practice this backend is notoriously difficult to configure, and KCA University's deployment had it either missing or non-functional. As a result, 10,000+ distributed users had no access to Moodle's predictive intelligence: the Insights page was empty, dropout flags never fired, and course-risk predictions were silent.</p>
+        <p>Moodle's native Analytics API can predict student dropout and course risk - but only when a Python ML backend is running reliably behind it. In practice this backend is notoriously difficult to configure, and KCA University's deployment had it either missing or non-functional. As a result, 10,000+ distributed users had no access to Moodle's predictive intelligence: the Insights page was empty, dropout flags never fired, and course-risk predictions were silent.</p>
       </div>
 
       <div class="case-block">
         <h2><i class="fa-solid fa-users"></i> Target Audience</h2>
-        <p>University QA officers, programme coordinators, and academic managers needing early-warning signals on at-risk students and underperforming courses — across KCA University's multi-campus Moodle deployment serving 10,000+ active users.</p>
+        <p>University QA officers, programme coordinators, and academic managers needing early-warning signals on at-risk students and underperforming courses - across KCA University's multi-campus Moodle deployment serving 10,000+ active users.</p>
       </div>
 
       <div class="case-block">
         <h2><i class="fa-solid fa-user-tie"></i> My Role</h2>
-        <p>Lead engineer — diagnosed the missing ML backend, engineered and configured the Python environment, integrated it with Moodle's Analytics API, and deployed to production on AWS. Also surfaced the resulting predictions inside the Course Audit Tool dashboard, making insights actionable rather than buried in Moodle's native Insights page.</p>
+        <p>Lead engineer - diagnosed the missing ML backend, engineered and configured the Python environment, integrated it with Moodle's Analytics API, and deployed to production on AWS. Also surfaced the resulting predictions inside the Course Audit Tool dashboard, making insights actionable rather than buried in Moodle's native Insights page.</p>
       </div>
 
       <div class="case-block full">
         <h2><i class="fa-solid fa-diagram-project"></i> Design Process &amp; Approach</h2>
-        <p>The first challenge was diagnosis — Moodle's Analytics API fails silently when its ML backend is absent or misconfigured, so establishing a clear picture of what was missing required tracing the API call chain, inspecting server logs, and cross-referencing Moodle's documentation against the actual Python environment state. Once the gap was identified, the work was methodical: provision the correct Python environment on AWS, configure Moodle's <code>analytics</code> settings to point to it, validate predictions were generating, then surface those predictions where QA staff would actually see and act on them — integrated into the Course Audit Tool dashboard, not left on a page most users never visit.</p>
+        <p>The first challenge was diagnosis - Moodle's Analytics API fails silently when its ML backend is absent or misconfigured, so establishing a clear picture of what was missing required tracing the API call chain, inspecting server logs, and cross-referencing Moodle's documentation against the actual Python environment state. Once the gap was identified, the work was methodical: provision the correct Python environment on AWS, configure Moodle's <code>analytics</code> settings to point to it, validate predictions were generating, then surface those predictions where QA staff would actually see and act on them - integrated into the Course Audit Tool dashboard, not left on a page most users never visit.</p>
       </div>
 
       <div class="case-block full">
         <h2><i class="fa-solid fa-lightbulb"></i> The Solution</h2>
         <p>A fully operational Moodle Analytics ML backend deployed on AWS, with predictions surfaced directly inside the Course Audit Tool:</p>
         <ul>
-          <li><strong>Python ML backend provisioning</strong> — engineered the correct Python environment, dependencies, and Moodle configuration to enable the Analytics API's machine learning models on a production server.</li>
-          <li><strong>Dropout and course-risk prediction activation</strong> — Moodle's built-in predictive models (student dropout likelihood, course-at-risk flags) now run on schedule and generate real insights from live enrolment and activity data.</li>
-          <li><strong>Dashboard integration</strong> — ML predictions are surfaced directly on the Course Audit Tool's compliance dashboard and a dedicated ML Insights page, listing every flagged student or course by name.</li>
-          <li><strong>Actionable messaging</strong> — QA staff can message an at-risk student directly or bulk-email the lecturers of at-risk courses from within the dashboard, using Moodle's real notification and email APIs — no manual lookup required.</li>
-          <li><strong>Production deployment on AWS</strong> — configured for reliability and compatibility with KCA University's existing Moodle 5.0.8 infrastructure.</li>
+          <li><strong>Python ML backend provisioning</strong> - engineered the correct Python environment, dependencies, and Moodle configuration to enable the Analytics API's machine learning models on a production server.</li>
+          <li><strong>Dropout and course-risk prediction activation</strong> - Moodle's built-in predictive models (student dropout likelihood, course-at-risk flags) now run on schedule and generate real insights from live enrolment and activity data.</li>
+          <li><strong>Dashboard integration</strong> - ML predictions are surfaced directly on the Course Audit Tool's compliance dashboard and a dedicated ML Insights page, listing every flagged student or course by name.</li>
+          <li><strong>Actionable messaging</strong> - QA staff can message an at-risk student directly or bulk-email the lecturers of at-risk courses from within the dashboard, using Moodle's real notification and email APIs - no manual lookup required.</li>
+          <li><strong>Production deployment on AWS</strong> - configured for reliability and compatibility with KCA University's existing Moodle 5.0.8 infrastructure.</li>
         </ul>
       </div>
 
@@ -90,7 +90,7 @@
       <div class="case-block">
         <h2><i class="fa-solid fa-certificate"></i> Technical Competencies Demonstrated</h2>
         <ul>
-          <li>Moodle Analytics API — architecture and ML backend integration</li>
+          <li>Moodle Analytics API - architecture and ML backend integration</li>
           <li>Python ML environment provisioning and dependency management</li>
           <li>AWS server configuration for Moodle production deployments</li>
           <li>Moodle messaging and notification API integration</li>
