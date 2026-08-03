@@ -443,6 +443,13 @@ section { padding: 96px 0; }
   object-fit: cover;
 }
 
+.about-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
 .about-text h2 {
   font-size: 1.8rem;
   font-weight: 800;
