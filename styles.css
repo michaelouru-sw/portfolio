@@ -443,12 +443,6 @@ section { padding: 96px 0; }
   object-fit: cover;
 }
 
-.about-video iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
 
 .about-text h2 {
   font-size: 1.8rem;
@@ -469,6 +463,19 @@ section { padding: 96px 0; }
 .about-device {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.about-device-video {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.about-device-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
   display: block;
 }
 
